@@ -1,6 +1,6 @@
 ## Summary
 
-This is a fullstack boierplate setup project for MERN stack application
+This is a fullstack boilerplate setup project for MERN stack application
 
 For [React frontend application boilerplate](https://github.com/Vishwanath-Ramesh/react-boilerplate)
 
@@ -95,6 +95,3 @@ npm run build
 or
 yarn build
 ```
-
-You can also open
-[the deployed app on Heroku](https://codaglobal-leaderboard.herokuapp.com/).
