@@ -1,0 +1,50 @@
+.formtab {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.formtab__tablist {
+  display: flex;
+  align-items: center;
+  background-color: #ef5644;
+  height: 7rem;
+  gap: 2rem;
+  padding: 0rem 2rem;
+  box-shadow: 0px 0px 10px 5px grey;
+}
+
+.formtab__tab {
+  font-size: 3rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.formtab__tab::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #4c54bd;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 3px;
+  visibility: hidden;
+  transform: scale(0);
+  transform-origin: left;
+  transition: 0.2s ease-out;
+}
+
+.formtab__tab.active {
+  font-weight: 600;
+}
+
+.formtab__tab.active::after {
+  visibility: visible;
+  transform: scale(1);
+}
+
+.formtab__tabpanels {
+  padding-top: 1rem;
+  overflow: auto;
+}

@@ -1,0 +1,61 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 800px;
+  background-color: #f4f2f3;
+  box-shadow: 1px 5px 5px 2px grey;
+  margin: 1rem 1rem 1rem auto;
+  align-self: center;
+}
+
+.auth__fromheader {
+  height: 100px;
+}
+.auth__pin {
+  position: absolute;
+}
+.auth__pin svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.auth:before {
+  position: relative;
+  content: '';
+  top: -5px;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  background-size: 9px 12px;
+  background-image: -webkit-radial-gradient(
+    5% 40%,
+    circle,
+    transparent 70%,
+    #555 20%
+  );
+  background-image: -moz-radial-gradient(
+    5% 40%,
+    circle,
+    transparent 70%,
+    #555 20%
+  );
+  background-image: -ms-radial-gradient(
+    5% 40%,
+    circle,
+    transparent 70%,
+    #555 20%
+  );
+  background-image: -o-radial-gradient(
+    5% 40%,
+    circle,
+    transparent 70%,
+    #555 20%
+  );
+  background-image: radial-gradient(
+    circle at 5% 40%,
+    transparent 70%,
+    #555 20%
+  );
+}

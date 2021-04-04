@@ -6,14 +6,17 @@ import {
   Redirect,
 } from 'react-router-dom'
 
+const Auth = lazy(() => import('../pages/Auth/Auth'))
 const PageNotFound = lazy(() => import('../pages/PageNotFound/PageNotFound'))
+const Home = lazy(() => import('../pages/Home/Home'))
 
 const Routes = () => {
   return (
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
         <Switch>
-          <Route exact path="/" component={() => <div>Home</div>} />
+          <Route exact path="/auth" component={Auth} />
+          <Route exact path="/" component={Home} />
           <Route path="/404" component={PageNotFound} />
           <Redirect to="/404" />
         </Switch>

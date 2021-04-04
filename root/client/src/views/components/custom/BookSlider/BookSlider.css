@@ -1,0 +1,5 @@
+.bookslider {
+  display: flex;
+  gap: 2rem;
+  padding: 0 1rem;
+}
